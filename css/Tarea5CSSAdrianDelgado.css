@@ -1,0 +1,104 @@
+body{
+    top: 10px;
+    bottom: 10px;
+    background-color: #006bb3 ;
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+}
+header{
+    padding: 3px 10px 3px 20px;
+    background-color: #4db8ff;
+    border-radius: 20px;
+    font-style: italic;
+}
+.title{
+    margin: 0px;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+aside{
+    position: relative;
+    flex: 2;
+    border: 2px solid #ccebff;
+    background-color: white;
+    height: 80px;
+    margin: 10px;   
+}
+aside nav{
+    top: 0px; 
+    background-color: #4db8ff;
+    
+    
+}
+aside nav ul{
+    list-style: none;
+    border-left: 2px solid blue;
+    max-width: fit-content;
+}
+aside nav ul li a{
+    margin: 5px;
+}
+aside nav ul li a:hover{
+    background-color: #004d80;
+    color: white;
+    font-size: 20px;
+}
+main{
+    
+    flex: 8;
+    background-color: white;
+    border: 2px solid #4db8ff;
+    border-radius: 10px;
+    margin: 10px;
+}
+section{
+    background-color: #cfebfb;
+    flex: auto;
+}
+.headerCitas{
+    background-color: #5c93d0;
+    text-align: end;
+}
+main section p{
+    border: 3px solid #5c93d0;
+    padding: 5px;
+    margin: 1.3rem;
+    color: #006bb3;
+}
+@keyframes animacion {
+    0%   {
+        background-color: green;
+        left: -10px; top: -10px;
+    }
+    25%  {
+        background-color: yellow;
+        left: 285px; top: -10px;
+    }
+    50%  {
+        background-color: red;
+        left: 285px; top: 80px;
+    }
+    75%  {
+        background-color: violet;
+        left: -10px; top: 80px;
+    }
+    100% {
+        background-color: green;
+        left: -10px; top: -10px;
+    }
+}
+.movebox {
+    background-color: green;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    animation: animacion 5s 1;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+  }
